@@ -46,34 +46,80 @@ body {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    flex-wrap: wrap;
 }
-.first .left1 h1 {
+/*Card with text*/
+.first .card_text {
+    width: 400px;
+}
+.first div:nth-child(4) {
+    background-color: lightgray;
+    padding: 70px 50px;
+}
+.first .card_text h1 {
     margin: 0;
     font-size: 52px;
     font-weight: 900;
     color: green;
     text-align: justify;
 }    
-.first .left1 p {
+.first .card_text p {
     margin: 20px 0;
 }
-.first .left1 p span {
+.first .card_text p span {
     text-decoration: underline;
     text-decoration-color: green;
 }
-.first .left1 button {
+/*Card with img & flags*/
+.card_img img {
+    width: 400px;
+    height: 400px;
+}
+.card_img .lflag, .rflag {
+    height: 250px;
+    width: 30px;
+    background-color: green;
+    position: absolute; /*PROBLEME! LA POSITION NE SADAPTE PAS EN FONCTION DE LA TAILLE DECRANT*/
+}
+.rflag {
+    left: 51.8%;
+    top: 588.6px;
+}
+.lflag {
+    left: 8.2%;
+}
+/*Buttons*/
+.first .card_text button {
     height: 40px;
     width: 180px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
 }
-.first button:first-of-type {
+.first .card_text button:hover {
+    transform: scale(1.05);
+}
+/*Button left*/
+.card_text .bleft {
     margin-right: 10px;
     background-color: green;
     color: #ffffff;
     font-weight: 900;
     border-color: green;
 }
-.first button:last-of-type {
+.card_text .bleft i {
+    margin-right: 15px;
+    font-size: 16px;
+}
+/*Button right*/
+.card_text .bright {
     margin-left: 10px;
     background-color: lightgrey;
+    font-weight: 900;
+    
+}
+.card_text .bright i {
+    margin-right: 20px;
+    font-size: 16px;
 }
