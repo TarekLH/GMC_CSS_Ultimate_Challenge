@@ -75,19 +75,22 @@ body {
     width: 400px;
     height: 400px;
 }
+.card_img, .card_text {
+    position: relative;
+}
 .card_img .lflag, .rflag {
     height: 250px;
     width: 30px;
     background-color: green;
-    position: absolute; /*PROBLEME! LA POSITION NE SADAPTE PAS EN FONCTION DE LA TAILLE DECRANT*/
+    position: absolute; 
 }
-.rflag {
-    left: 51.8%;
-    top: 588.6px;
+.rflag, .lflag {
+    left: -7.5%;
 }
 .lflag {
-    left: 8.2%;
+    top: 8%
 }
+
 /*Buttons*/
 .first .card_text button {
     height: 40px;
