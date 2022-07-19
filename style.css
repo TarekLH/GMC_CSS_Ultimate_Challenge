@@ -40,7 +40,7 @@ body {
     top: 6px;
 }
 
-/*Partie first*/
+/*Part first (first container)*/
 .first {
     display: flex;
     justify-content: center;
@@ -48,29 +48,31 @@ body {
     gap: 100px;
     flex-wrap: wrap;
 }
-/*Card with text*/
+/*Block with text & button*/
 .first .card_text {
     width: 400px;
 }
 .first div:nth-child(4) {
     background-color: lightgray;
     padding: 70px 50px;
+    border-radius: 5px;
 }
-.first .card_text h1 {
+ .card_text h1 {
     margin: 0;
     font-size: 52px;
     font-weight: 900;
     color: green;
     text-align: justify;
 }    
-.first .card_text p {
+.card_text p {
     margin: 20px 0;
+    line-height: 1.5;
 }
 .first .card_text p span {
     text-decoration: underline;
     text-decoration-color: green;
 }
-/*Card with img & flags*/
+/*Blocks with img & flags*/
 .card_img img {
     width: 400px;
     height: 400px;
@@ -92,7 +94,7 @@ body {
 }
 
 /*Buttons*/
-.first .card_text button {
+.card_text button {
     height: 40px;
     width: 180px;
     border: none;
@@ -100,7 +102,7 @@ body {
     cursor: pointer;
     transition: transform 0.5s;
 }
-.first .card_text button:hover {
+.card_text button:hover {
     transform: scale(1.05);
 }
 /*Button left*/
@@ -127,18 +129,29 @@ body {
     font-size: 16px;
 }
 
-/*Partie Second*/
+/*Part Second*/
 .second {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 19%;
     background-color: lightgray;
-    margin-top: 10px;
-    padding-top: 20px;
+    margin-top: 40px;
+    padding: 50px 20px;
 }
+
+/*Left block*/
+.second .card_text {
+    left: 5%;
+}
+.second .card_text h1 {
+    font-size: 56px;
+}
+/*Right block*/
 .card_details {
     display: grid;
-    grid-template-rows: 400px 400px;
-    grid-template-columns: 300px 300px;
+    grid-template-rows: 350px 350px;
+    grid-template-columns: 270px 270px;
     gap: 30px;
     text-align: center;
 }
@@ -146,7 +159,7 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     position: relative;
-    padding: 30px;
+    padding: 90px 30px 0 30px;
 }
 .backicon {
     background-color: lightgreen;
@@ -156,5 +169,20 @@ body {
     height: 20%;
     position: absolute;
     left: 35%;
-    top: 10px;
+    top: 7%;
+}
+.card_details h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: green;
+}
+.card_details p {
+    line-height: 1.5;
+    margin: 0px;
+}
+.card_details a {
+    color: inherit;
+    text-decoration-color: green;
+    line-height: 2.2;
 }
