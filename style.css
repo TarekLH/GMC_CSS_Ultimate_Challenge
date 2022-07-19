@@ -40,7 +40,7 @@ body {
     top: 6px;
 }
 
-/*Part first (first container)*/
+/*First Part (first container)*/
 .first {
     display: flex;
     justify-content: center;
@@ -129,7 +129,7 @@ body {
     font-size: 16px;
 }
 
-/*Part Second*/
+/*Second Part (second container)*/
 .second {
     display: flex;
     justify-content: center;
@@ -138,6 +138,7 @@ body {
     background-color: lightgray;
     margin-top: 40px;
     padding: 50px 20px;
+    flex-wrap: wrap;
 }
 
 /*Left block*/
@@ -185,4 +186,55 @@ body {
     color: inherit;
     text-decoration-color: green;
     line-height: 2.2;
+}
+
+
+/*Third Part (third container)*/
+/*Top part*/
+.third .card_text {
+    text-align: center;
+    margin-bottom: 55px;
+}
+.third .card_text h1 {
+    text-align: center;
+}
+/*Bot part*/
+.card_customers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 20px;
+}
+.customer {
+    text-align: center;
+    line-height: 1.8;
+    padding: 1.7rem;
+    word-spacing: 3.5px;
+    background-color: lightgray;
+    width: 250px;
+    height: 530px;
+    border-radius: 10px;
+}
+.customer img {
+    border-radius: 100%;
+    width: 150px;
+    border: solid white;
+    border-width: 5px;
+}
+.customer h4 {
+    color: green;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.customer p {
+    margin: 15px 0 0;
+}
+.customer span {
+    font-size: 15px;
+    color: gray;
+}
+.card_customers p:last-child span {
+    text-decoration: underline;
+    text-decoration-color: green;
+    margin: 0;
 }
