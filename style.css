@@ -22,13 +22,14 @@ body {
     right: 40px;
     font-size: 30px;
 }
-.social i:first-child {
+.social i:first-of-type {
     color: gray;
-    margin-right: 15.5px;
+    margin-right: 10px;
 }
 
 .social a:nth-child(2) > i {
     color: #4267B2;
+    margin-left: 10px;
 
 }
 .social a:nth-child(3) > i {
@@ -255,11 +256,11 @@ body {
 .fourth {
     background-color: lightgray;
     padding: 40px 190px;
-    height: 500px;
+    height: 550px;
 }
 .fourth form {
     background-color: #ffffff;
-    height: 80%;
+    height: 73%;
     border-radius: 10px;
     padding: 30px;
 }
@@ -271,6 +272,9 @@ body {
     font-size: 25px;
     margin: 0 5px;
     color: green;
+}
+.ireseaux {
+    margin-top: 25px;
 }
 .inputs {
     width: 50%;
@@ -293,6 +297,7 @@ body {
     height: 100px;
     padding: 10px;
     outline-color: gray;
+    resize: none;
 }
 .inputs button {
     border: none;
@@ -306,4 +311,36 @@ body {
 .inputs button:hover {
     transform: scale(1.02);
     cursor: pointer;
+}
+.newb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 11%;
+}
+.newb div {
+    background-color: #1DA1F2;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    padding: 2.5px;
+    cursor: pointer;
+}
+.newb div i {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 25px;
+}
+/*Footer part*/
+footer {
+    height: 120px;
+    text-align: center;
+    background-color: #303030;
+    color: #ffffff;
+    padding-top: 4%;
+}
+footer p {
+    margin: 0;
+    font-size: 15px;
 }
